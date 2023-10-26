@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Sokoban - Webg2</title>
+    <script src="scripts/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/levels.js"></script>
+    <script src="scripts/state.js"></script>
+    <script src="scripts/game.js"></script>
+    <link rel="shortcut icon" type="image/png" href="styles/box.png" />
+
+</head>
+
+<body>
+    <header>
+        <h1>
+            Sokoban
+        </h1>
+    </header>
+
+    <main>
+        <div id="world"></div>
+        <p class="compteur">Nombre de déplacements : <span class="cpt"> 0</span></p>
+        <p class="bestScore">Target : <span class="bS">?</span></p>
+        <p class="scorePlayer">Score : <span class="currentScore">  ∞ </span></p>
+        <div>
+            <button class="restart">Recommencer</button>
+            <button class="aide">Aide</button>
+            <button class="last">Retourner en arrière</button>
+            <button class="rebootScore">Effacer le meilleur Score</button>
+            <div id="modal" style="display: none">
+                <div class="overlay ">
+                    <h1>
+                        Aide.
+                    </h1>
+
+                    <h2>
+                        Bienvenue dans le jeu du Sokoban.
+
+                    </h2>
+                    <p>
+                        <img src="styles/help-level.png">
+                    </p>
+                    <h2>Le but :</h2>
+                    <p>
+                        Mettre les boites sur les cibles en les poussant:
+                        <img src="styles/help-push.png">
+                    </p>
+
+                    <p class="contenuModal">
+
+                        Vous ne pouvez pas pousser une caisse contre un mur ou une autre caisse.
+                        <img src="styles/help-double.png">
+                    </p>
+                    <p class="contenuModal">
+                        Si vous avez fini le niveau, appuyez sur la barre espace.
+                        <img src="styles/help-win.png">
+
+                    </p>
+                    <button class="close">Fermer</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            Images crées par Jeng-Long Jiang.
+        </p>
+        <p>
+            Lejeune Mathéo - 58738
+        </p>
+    </footer>
+</body>
+
+</html>

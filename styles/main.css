@@ -1,0 +1,121 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: lightgreen;
+    text-align: center;
+    display:grid ;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:"header header" "main main"
+    "footer footer";
+    }
+header{
+    text-decoration: underline;
+    font-style: italic;
+    grid-area: header;
+}
+main{
+    grid-area: main;
+}
+#world{
+    margin-left: 590px;
+}
+.square{
+    background-color: blue;
+    width: 30px;
+    height: 30px;
+    background-image: url(ground.png);
+    
+
+}
+.target{
+    background-color: lightgreen;
+    background-image: url(target.png);
+   
+    
+
+}
+.box{
+    background-color: yellow;
+    background-image: url(box.png);
+}
+.wall{
+    background-color: lightgrey; 
+    background-image: url(wall.png);
+}
+.on{
+    background-color: red;
+    background-image: url(box-on-target.png);
+}
+.player{
+    background-color: purple;
+    background-image: url(player-front.png);
+}
+.ligne{
+    display: flex;
+}
+.left{
+    background-image: url(player-left.png);
+}
+.right{
+    background-image: url(player-right.png);
+}
+.up{
+    background-image: url(player-up.png);
+}
+.down{
+    background-image: url(player-front.png);
+
+}
+.won{
+    background-image:url(player-won.png);
+}
+
+
+ #modal{
+    background-color: lightblue;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    z-index: 1000;
+  }
+.overlay{
+  width: fit-content;
+  height: fit-content;
+  margin: 150px auto;
+  background-color: lightblue;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+  border: 3px solid grey;
+  position: absolute;
+  left: 50%;
+  top: 275px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+
+}
+
+
+.contenuModal{
+    margin-top: 50px;
+}
+
+
+
+.compteur{
+    width: fit-content;
+    display: flex;
+    text-align: center;
+    margin-left: 650px;
+    background-color: lightgray;
+    border-style: outset;
+    border-color: black;
+}
+footer{
+    grid-area: footer;
+    background-color: lightpink ;
+    width: fit-content;
+    margin: auto;
+}
