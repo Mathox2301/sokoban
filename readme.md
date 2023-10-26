@@ -3,7 +3,7 @@
 This repository contains a version of Sokoban written in JavaScript.
 To play, open the 'index.html' file in your preferred browser.
 
-## Auteur
+## Author
 
 This game is provided by Mathéo Lejeune.
 
