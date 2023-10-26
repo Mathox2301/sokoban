@@ -1,7 +1,13 @@
-# Sokobon
+# Sokoban
 
-Ce dépot contient une version de Sokoban écrite en JavaScript. Pour y jouer, ouvrer le fichier 'index.html' dans votre navigateur préféré.
+This repository contains a version of Sokoban written in JavaScript.
+To play, open the 'index.html' file in your preferred browser.
 
 ## Auteur
 
-Ce jeu vous est proposé par Lejeune Mathéo
+This game is provided by Mathéo Lejeune.
+
+## Remark
+The game is not complete! The 'undo' button, as well as the score and the number of targets, do not work correctly.
+
+
